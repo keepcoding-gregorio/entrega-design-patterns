@@ -13,7 +13,7 @@ class SplashViewController: UIViewController, SplashViewProtocol {
     
     var viewModel: SplashViewModelProtocol?
     
-    // MARK - View Controller implementation -
+    // MARK: - View Controller implementation -
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel?.onViewsLoaded()
@@ -24,7 +24,7 @@ class SplashViewController: UIViewController, SplashViewProtocol {
         loadingIndicator.stopAnimating()
     }
     
-    // MARK - Splash View implementation -
+    // MARK: - Splash View implementation -
     func showLoading( _ show: Bool ) {
         switch show {
         case true where !loadingIndicator.isAnimating:
@@ -37,6 +37,7 @@ class SplashViewController: UIViewController, SplashViewProtocol {
     
     func navigateToHome() {
         let homeViewController = HomeTableViewController()
+        homeViewController.viewModel = HomeViewModel(viewDelegate: homeViewController)
         navigationController?.setViewControllers([homeViewController], animated: true)
     }
 }
