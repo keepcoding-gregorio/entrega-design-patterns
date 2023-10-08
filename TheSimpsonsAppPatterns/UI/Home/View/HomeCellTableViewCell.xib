@@ -27,19 +27,36 @@
                                     <constraint firstAttribute="width" secondItem="aoM-22-5Aa" secondAttribute="height" multiplier="4:3" id="kz5-vI-o4S" userLabel="aspect = 6:5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0w-RV-ag8" userLabel="Character Name">
-                                <rect key="frame" x="224" y="139.33333333333334" width="45.666666666666686" height="21.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lu3-ie-Tpd">
+                                <rect key="frame" x="224" y="101.33333333333331" width="84" height="97.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0w-RV-ag8" userLabel="Character Name">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="21.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTt-qa-yus" userLabel="Character Job">
+                                        <rect key="frame" x="0.0" y="33.666666666666671" width="84" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="beC-R3-Dkr"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="aoM-22-5Aa" firstAttribute="centerY" secondItem="3ze-c8-mYI" secondAttribute="centerY" id="Qj9-VT-AZE"/>
+                            <constraint firstItem="lu3-ie-Tpd" firstAttribute="centerY" secondItem="3ze-c8-mYI" secondAttribute="centerY" id="TbR-wN-idk"/>
                             <constraint firstItem="aoM-22-5Aa" firstAttribute="leading" secondItem="3ze-c8-mYI" secondAttribute="leading" constant="12" id="pVN-M2-DJP"/>
-                            <constraint firstItem="T0w-RV-ag8" firstAttribute="leading" secondItem="aoM-22-5Aa" secondAttribute="trailing" constant="12" id="qco-bg-aTq"/>
-                            <constraint firstItem="T0w-RV-ag8" firstAttribute="centerY" secondItem="3ze-c8-mYI" secondAttribute="centerY" id="yai-G6-esD"/>
+                            <constraint firstAttribute="trailing" secondItem="lu3-ie-Tpd" secondAttribute="trailing" constant="12" id="uYf-ly-hyR"/>
+                            <constraint firstItem="lu3-ie-Tpd" firstAttribute="leading" secondItem="aoM-22-5Aa" secondAttribute="trailing" constant="12" id="yyr-3t-fCd"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -51,9 +68,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
             <connections>
                 <outlet property="cellView" destination="3ze-c8-mYI" id="U8W-wF-0hf"/>
                 <outlet property="homeCellImage" destination="aoM-22-5Aa" id="hIp-4G-Qyi"/>
+                <outlet property="homeCellJob" destination="fTt-qa-yus" id="hjC-Kg-xt0"/>
                 <outlet property="homeCellName" destination="T0w-RV-ag8" id="zgt-iB-582"/>
             </connections>
             <point key="canvasLocation" x="108" y="79"/>

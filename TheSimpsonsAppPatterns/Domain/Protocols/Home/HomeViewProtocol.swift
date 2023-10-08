@@ -8,6 +8,6 @@
 import Foundation
 
 protocol HomeViewProtocol: AnyObject {
-    func navigateToDetail( with data: DetailCharacterModel? )
+    func navigateToDetail(with data: DetailCharacterModel?)
     func updateViews()
 }

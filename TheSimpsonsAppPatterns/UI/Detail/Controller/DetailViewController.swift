@@ -7,23 +7,38 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-
+class DetailViewController: UIViewController, DetailViewProtocol {
+    
+    @IBOutlet weak var detailImage: UIImageView!
+    @IBOutlet weak var detailName: UILabel!
+    @IBOutlet weak var detailDescription: UITextView!
+    
+    var viewModel: DetailViewModelProtocol?
+    
+    // MARK: View Controller implementation
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        viewModel?.onViewLoaded()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: Detail View protocol implementation
+    func updateView(character: DetailCharacterModel?) {
+        updateLabel(content: character?.name, label: detailName)
+        updateText(content: character?.description, textView: detailDescription)
+        updateImage(imageName: character?.image, imageView: detailImage)
     }
-    */
+    
+    // TODO: extract to utils
+    private func updateLabel(content: String?, label: UILabel) {
+        label.text = content ?? ""
+    }
+    
+    private func updateText(content: String?, textView: UITextView) {
+        textView.text = content ?? ""
+    }
+    
+    private func updateImage(imageName: String?, imageView: UIImageView) {
+        imageView.image = UIImage(named: imageName ?? "")
+    }
 
 }

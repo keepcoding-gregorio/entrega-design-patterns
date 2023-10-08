@@ -10,7 +10,6 @@ import UIKit
 class HomeTableViewController: UITableViewController, HomeViewProtocol {
     
     var viewModel: HomeViewModelProtocol?
-        
     
     // MARK: - Table View Controller implementation -
     override func viewDidLoad() {
@@ -34,7 +33,7 @@ class HomeTableViewController: UITableViewController, HomeViewProtocol {
         }
         
         if let character = viewModel?.getCharacter(at: indexPath.row) {
-            cell.updateViews(data: character)
+            cell.updateViews(character: character)
         }
         return cell
     }
@@ -52,8 +51,9 @@ class HomeTableViewController: UITableViewController, HomeViewProtocol {
         tableView.reloadData()
     }
     
-    func navigateToDetail(with data: DetailCharacterModel?) {
+    func navigateToDetail(with character: DetailCharacterModel?) {
         let detailViewController = DetailViewController()
+        detailViewController.viewModel = DetailViewModel(character: character)
         navigationController?.pushViewController(detailViewController, animated: true)
     }
     

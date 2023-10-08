@@ -10,5 +10,5 @@ import Foundation
 struct HomeCharacterModel {
     var name: String
     var image: String?
-    var description: String
+    var job: String
 }

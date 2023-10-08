@@ -29,6 +29,9 @@
 		D6DB64DB2AD26F38008157E7 /* HomeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6DB64D92AD26F38008157E7 /* HomeCellTableViewCell.xib */; };
 		D6DB64DE2AD27BE4008157E7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64DC2AD27BE4008157E7 /* DetailViewController.swift */; };
 		D6DB64DF2AD27BE4008157E7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6DB64DD2AD27BE4008157E7 /* DetailViewController.xib */; };
+		D6DB64E12AD2EE2B008157E7 /* DetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64E02AD2EE2B008157E7 /* DetailViewModelProtocol.swift */; };
+		D6DB64E32AD2EE6F008157E7 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64E22AD2EE6F008157E7 /* DetailViewModel.swift */; };
+		D6DB64E52AD2F2A3008157E7 /* DetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64E42AD2F2A3008157E7 /* DetailViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		D6DB64D92AD26F38008157E7 /* HomeCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCellTableViewCell.xib; sourceTree = "<group>"; };
 		D6DB64DC2AD27BE4008157E7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D6DB64DD2AD27BE4008157E7 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		D6DB64E02AD2EE2B008157E7 /* DetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		D6DB64E22AD2EE6F008157E7 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		D6DB64E42AD2F2A3008157E7 /* DetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +224,7 @@
 		D6DB64B02AD23D53008157E7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D6DB64E22AD2EE6F008157E7 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -279,6 +286,8 @@
 			children = (
 				D6DB64D02AD26444008157E7 /* HomeViewModelProtocol.swift */,
 				D6DB64D22AD2659A008157E7 /* HomeViewProtocol.swift */,
+				D6DB64E02AD2EE2B008157E7 /* DetailViewModelProtocol.swift */,
+				D6DB64E42AD2F2A3008157E7 /* DetailViewProtocol.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -370,8 +379,11 @@
 				D6DB64CE2AD26401008157E7 /* HomeViewModel.swift in Sources */,
 				D6DB64C52AD2604E008157E7 /* DetailCharacterModel.swift in Sources */,
 				D6DB64CC2AD26348008157E7 /* HomeCharacterModel.swift in Sources */,
+				D6DB64E32AD2EE6F008157E7 /* DetailViewModel.swift in Sources */,
 				D6DB64D32AD2659A008157E7 /* HomeViewProtocol.swift in Sources */,
 				D6DB64922AD223CE008157E7 /* SceneDelegate.swift in Sources */,
+				D6DB64E52AD2F2A3008157E7 /* DetailViewProtocol.swift in Sources */,
+				D6DB64E12AD2EE2B008157E7 /* DetailViewModelProtocol.swift in Sources */,
 				D6DB64B92AD24644008157E7 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@ class HomeCellTableViewCell: UITableViewCell {
     @IBOutlet weak var homeCellImage: UIImageView!
     @IBOutlet weak var homeCellName: UILabel!
     
+    @IBOutlet weak var homeCellJob: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,17 +26,22 @@ class HomeCellTableViewCell: UITableViewCell {
         homeCellImage.image = nil
     }
     
-    func updateViews(data: DetailCharacterModel?) {
-        update(name: data?.name)
-        update(image: data?.image)
+    func updateViews(character: DetailCharacterModel?) {
+        updateLabel(content: character?.name, label: homeCellName)
+        updateText(content: character?.job, textView: homeCellJob)
+        updateImage(imageName: character?.image, imageView: homeCellImage)
     }
     
-    private func update(name: String?) {
-        homeCellName.text = name ?? ""
+    private func updateLabel(content: String?, label: UILabel) {
+        label.text = content ?? ""
     }
     
-    private func update(image: String?) {
-        homeCellImage.image = UIImage(named: image ?? "")
+    private func updateText(content: String?, textView: UITextView) {
+        textView.text = content ?? ""
+    }
+    
+    private func updateImage(imageName: String?, imageView: UIImageView) {
+        imageView.image = UIImage(named: imageName ?? "")
     }
     
     private func formatCell() {
