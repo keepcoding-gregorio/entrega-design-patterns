@@ -10,14 +10,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="TheSimpsonsAppPatterns" customModuleProvider="target">
             <connections>
-                <outlet property="detailDescription" destination="kmo-ub-CqW" id="6Uo-Ea-0GG"/>
-                <outlet property="detailImage" destination="zn0-od-DqX" id="JPM-Dj-6fp"/>
-                <outlet property="detailName" destination="nt9-b4-vnf" id="7Uv-Sq-Do8"/>
+                <outlet property="detailDescription" destination="kmo-ub-CqW" id="lPi-tp-po5"/>
+                <outlet property="detailImage" destination="zn0-od-DqX" id="o4W-l2-kpb"/>
+                <outlet property="detailName" destination="nt9-b4-vnf" id="0bc-cN-suk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" alpha="0.69999999999999996" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -35,7 +35,6 @@
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kmo-ub-CqW" userLabel="Description">
                     <rect key="frame" x="12" y="434" width="369" height="360"/>
-                    <color key="backgroundColor" systemColor="systemYellowColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="360" id="9LF-iF-7UR"/>
                     </constraints>

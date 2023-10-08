@@ -8,12 +8,11 @@
 import UIKit
 
 class HomeCellTableViewCell: UITableViewCell {
-
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var homeCellImage: UIImageView!
     @IBOutlet weak var homeCellName: UILabel!
-    
     @IBOutlet weak var homeCellJob: UITextView!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,22 +25,10 @@ class HomeCellTableViewCell: UITableViewCell {
         homeCellImage.image = nil
     }
     
-    func updateViews(character: DetailCharacterModel?) {
+    func updateViews(character: CharacterModel?) {
         updateLabel(content: character?.name, label: homeCellName)
         updateText(content: character?.job, textView: homeCellJob)
         updateImage(imageName: character?.image, imageView: homeCellImage)
-    }
-    
-    private func updateLabel(content: String?, label: UILabel) {
-        label.text = content ?? ""
-    }
-    
-    private func updateText(content: String?, textView: UITextView) {
-        textView.text = content ?? ""
-    }
-    
-    private func updateImage(imageName: String?, imageView: UIImageView) {
-        imageView.image = UIImage(named: imageName ?? "")
     }
     
     private func formatCell() {

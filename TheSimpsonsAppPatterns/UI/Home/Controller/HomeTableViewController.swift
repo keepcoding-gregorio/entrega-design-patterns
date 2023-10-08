@@ -14,7 +14,7 @@ class HomeTableViewController: UITableViewController, HomeViewProtocol {
     // MARK: - Table View Controller implementation -
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "The Simpsons"
+        title = "Home"
         registerCells()
         viewModel?.onViewsLoaded()
     }
@@ -51,9 +51,9 @@ class HomeTableViewController: UITableViewController, HomeViewProtocol {
         tableView.reloadData()
     }
     
-    func navigateToDetail(with character: DetailCharacterModel?) {
+    func navigateToDetail(with character: CharacterModel?) {
         let detailViewController = DetailViewController()
-        detailViewController.viewModel = DetailViewModel(character: character)
+        detailViewController.viewModel = DetailViewModel(viewDelegate: detailViewController, character: character)
         navigationController?.pushViewController(detailViewController, animated: true)
     }
     

@@ -68,12 +68,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <color key="backgroundColor" systemColor="systemYellowColor"/>
             <connections>
-                <outlet property="cellView" destination="3ze-c8-mYI" id="U8W-wF-0hf"/>
-                <outlet property="homeCellImage" destination="aoM-22-5Aa" id="hIp-4G-Qyi"/>
-                <outlet property="homeCellJob" destination="fTt-qa-yus" id="hjC-Kg-xt0"/>
-                <outlet property="homeCellName" destination="T0w-RV-ag8" id="zgt-iB-582"/>
+                <outlet property="cellView" destination="3ze-c8-mYI" id="jrc-Sw-RKN"/>
+                <outlet property="homeCellImage" destination="aoM-22-5Aa" id="8I5-bb-Hbm"/>
+                <outlet property="homeCellJob" destination="fTt-qa-yus" id="HFO-Ql-Efn"/>
+                <outlet property="homeCellName" destination="T0w-RV-ag8" id="LbT-Q2-ros"/>
             </connections>
             <point key="canvasLocation" x="108" y="79"/>
         </tableViewCell>

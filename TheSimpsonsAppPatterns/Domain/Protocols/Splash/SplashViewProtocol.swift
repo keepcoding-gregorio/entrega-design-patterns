@@ -8,6 +8,6 @@
 import Foundation
 
 protocol SplashViewProtocol: AnyObject {
-    func showLoading( _ show: Bool)
+    func showLoading(_ show: Bool)
     func navigateToHome()
 }

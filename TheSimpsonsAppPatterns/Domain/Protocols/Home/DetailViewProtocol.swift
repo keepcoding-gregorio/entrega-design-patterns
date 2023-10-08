@@ -8,5 +8,5 @@
 import Foundation
 
 protocol DetailViewProtocol: AnyObject {
-    func updateView(character: DetailCharacterModel?)
+    func updateView(character: CharacterModel?)
 }

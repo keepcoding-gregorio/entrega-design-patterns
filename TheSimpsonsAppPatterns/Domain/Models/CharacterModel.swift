@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DetailCharacterModel {
+struct CharacterModel {
     var name: String
     var job: String
     var image: String?

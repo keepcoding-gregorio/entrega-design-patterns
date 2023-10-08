@@ -31,7 +31,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     }
     
     
-    func getCharacter(at index: Int) -> DetailCharacterModel? {
+    func getCharacter(at index: Int) -> CharacterModel? {
         guard index < totalCount else {
             return nil
         }

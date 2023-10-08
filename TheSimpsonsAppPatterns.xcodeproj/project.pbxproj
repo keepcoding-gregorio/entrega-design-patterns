@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D691EF852AD3199700D470E1 /* OutletsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D691EF842AD3199700D470E1 /* OutletsUtils.swift */; };
 		D6DB64902AD223CE008157E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB648F2AD223CE008157E7 /* AppDelegate.swift */; };
 		D6DB64922AD223CE008157E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64912AD223CE008157E7 /* SceneDelegate.swift */; };
 		D6DB64992AD223CF008157E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DB64982AD223CF008157E7 /* Assets.xcassets */; };
@@ -18,10 +19,8 @@
 		D6DB64BE2AD24872008157E7 /* SplashViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64BD2AD24872008157E7 /* SplashViewProtocol.swift */; };
 		D6DB64C12AD255AF008157E7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64BF2AD255AF008157E7 /* HomeTableViewController.swift */; };
 		D6DB64C22AD255AF008157E7 /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6DB64C02AD255AF008157E7 /* HomeTableViewController.xib */; };
-		D6DB64C52AD2604E008157E7 /* DetailCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64C42AD2604E008157E7 /* DetailCharacterModel.swift */; };
+		D6DB64C52AD2604E008157E7 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64C42AD2604E008157E7 /* CharacterModel.swift */; };
 		D6DB64C82AD260A7008157E7 /* CharactersDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64C72AD260A7008157E7 /* CharactersDataProvider.swift */; };
-		D6DB64CA2AD26242008157E7 /* CharacterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64C92AD26242008157E7 /* CharacterProtocol.swift */; };
-		D6DB64CC2AD26348008157E7 /* HomeCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64CB2AD26348008157E7 /* HomeCharacterModel.swift */; };
 		D6DB64CE2AD26401008157E7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64CD2AD26401008157E7 /* HomeViewModel.swift */; };
 		D6DB64D12AD26444008157E7 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64D02AD26444008157E7 /* HomeViewModelProtocol.swift */; };
 		D6DB64D32AD2659A008157E7 /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB64D22AD2659A008157E7 /* HomeViewProtocol.swift */; };
@@ -35,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D691EF842AD3199700D470E1 /* OutletsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletsUtils.swift; sourceTree = "<group>"; };
 		D6DB648C2AD223CE008157E7 /* TheSimpsonsAppPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSimpsonsAppPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DB648F2AD223CE008157E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6DB64912AD223CE008157E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,10 +48,8 @@
 		D6DB64BD2AD24872008157E7 /* SplashViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewProtocol.swift; sourceTree = "<group>"; };
 		D6DB64BF2AD255AF008157E7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		D6DB64C02AD255AF008157E7 /* HomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
-		D6DB64C42AD2604E008157E7 /* DetailCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterModel.swift; sourceTree = "<group>"; };
+		D6DB64C42AD2604E008157E7 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		D6DB64C72AD260A7008157E7 /* CharactersDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDataProvider.swift; sourceTree = "<group>"; };
-		D6DB64C92AD26242008157E7 /* CharacterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterProtocol.swift; sourceTree = "<group>"; };
-		D6DB64CB2AD26348008157E7 /* HomeCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharacterModel.swift; sourceTree = "<group>"; };
 		D6DB64CD2AD26401008157E7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D6DB64D02AD26444008157E7 /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
 		D6DB64D22AD2659A008157E7 /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
@@ -75,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D691EF832AD3198100D470E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D691EF842AD3199700D470E1 /* OutletsUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D6DB64832AD223CE008157E7 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +104,7 @@
 				D6DB64A62AD23CA4008157E7 /* Domain */,
 				D6DB64A52AD23C84008157E7 /* Resources */,
 				D6DB64A42AD23C62008157E7 /* UI */,
+				D691EF832AD3198100D470E1 /* Utils */,
 				D6DB649D2AD223CF008157E7 /* Info.plist */,
 			);
 			path = TheSimpsonsAppPatterns;
@@ -250,7 +257,6 @@
 			children = (
 				D6DB64CF2AD2642A008157E7 /* Home */,
 				D6DB64BA2AD24670008157E7 /* Splash */,
-				D6DB64C92AD26242008157E7 /* CharacterProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -267,8 +273,7 @@
 		D6DB64C32AD26036008157E7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D6DB64C42AD2604E008157E7 /* DetailCharacterModel.swift */,
-				D6DB64CB2AD26348008157E7 /* HomeCharacterModel.swift */,
+				D6DB64C42AD2604E008157E7 /* CharacterModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -367,7 +372,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6DB64C82AD260A7008157E7 /* CharactersDataProvider.swift in Sources */,
-				D6DB64CA2AD26242008157E7 /* CharacterProtocol.swift in Sources */,
 				D6DB64DA2AD26F38008157E7 /* HomeCellTableViewCell.swift in Sources */,
 				D6DB64BC2AD2468C008157E7 /* SplashViewModelProtocol.swift in Sources */,
 				D6DB64BE2AD24872008157E7 /* SplashViewProtocol.swift in Sources */,
@@ -377,13 +381,13 @@
 				D6DB64D12AD26444008157E7 /* HomeViewModelProtocol.swift in Sources */,
 				D6DB64C12AD255AF008157E7 /* HomeTableViewController.swift in Sources */,
 				D6DB64CE2AD26401008157E7 /* HomeViewModel.swift in Sources */,
-				D6DB64C52AD2604E008157E7 /* DetailCharacterModel.swift in Sources */,
-				D6DB64CC2AD26348008157E7 /* HomeCharacterModel.swift in Sources */,
+				D6DB64C52AD2604E008157E7 /* CharacterModel.swift in Sources */,
 				D6DB64E32AD2EE6F008157E7 /* DetailViewModel.swift in Sources */,
 				D6DB64D32AD2659A008157E7 /* HomeViewProtocol.swift in Sources */,
 				D6DB64922AD223CE008157E7 /* SceneDelegate.swift in Sources */,
 				D6DB64E52AD2F2A3008157E7 /* DetailViewProtocol.swift in Sources */,
 				D6DB64E12AD2EE2B008157E7 /* DetailViewModelProtocol.swift in Sources */,
+				D691EF852AD3199700D470E1 /* OutletsUtils.swift in Sources */,
 				D6DB64B92AD24644008157E7 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
